@@ -442,7 +442,7 @@ def extract_features_surf(
         detector.setInt("upright", config["surf_upright"])
 
     while True:
-        logger.debug("Computing surf with threshold {0}".format(surf_hessian_threshold))
+        logger.debug("Well done, you're detecting with surf. Computing surf with threshold {0}".format(surf_hessian_threshold))
         t = time.time()
         if context.OPENCV3:
             detector.setHessianThreshold(surf_hessian_threshold)
